@@ -1,0 +1,24 @@
+[project]
+name = "book-api"
+version = "0.1.0"
+description = "API для коллекции книг на FastAPI + SQLAlchemy + Pydantic v2"
+authors = [
+    {name = "KVinnikova",email = "ast.kristina@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "fastapi (>=0.124.2,<0.125.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "sqlalchemy (>=2.0.45,<3.0.0)",
+    "pydantic (>=2.12.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
